@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -10,7 +11,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>hi</div>
+      <div className={styles.linkbtn}>
+        <Link href="/signup">회원가입</Link>
+        <Link href="/login">로그인</Link>
+      </div>
     </>
   );
 }
